@@ -16,6 +16,11 @@
             height: 100vh;
         }
 
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
         .header{
             background-color: #222;
             color: white;
@@ -77,6 +82,19 @@
             font-size: 10vw;
         }
 
+        .flex-container{
+            margin-top: 50px;
+        }
+
+        .flex-item{
+            text-align: center;
+        }
+
+        .flex-item p{
+            margin: 20px 40px;
+        }
+
+
         @media screen and (min-width: 1024px){
             
             .logo{
@@ -100,7 +118,30 @@
             .hero-title h1{
                 font-size: 4vw;
             }
+
+            .flex-container{
+                width: 100vw;
+                display: flex;   
+                margin: 0 auto;
+                align-items: center;
+            }
+
+            .flex-item{
+                flex: 0 0 50%;
+                
+            }
+
+            .flex-container:nth-child(2){
+                margin-top: 50px;
+            }
+
+            .flex-container:nth-child(3){
+                flex-direction: row-reverse;
+            }
             
+            .flex-item p{
+                margin-top: 10px;
+            }
         }
 
     </style>
@@ -127,10 +168,40 @@
                 <h1>Titulo principal de la pagina</h1>
             </div>
         </article>
+
+        <section class="flex-container">
+            <article class="flex-item">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex molestiae culpa nam. Soluta asperiores voluptates aliquam explicabo, sapiente veritatis iusto enim aut quo sunt facere, illo expedita quisquam omnis?</p>
+            </article>
+
+            <article class="flex-item">
+                <img src="/tipo-de-arte-que-no-representa-la-realidad-2.jpg" alt="">
+            </article>
+        </section>
+
+        <section class="flex-container">
+            <article class="flex-item">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex molestiae culpa nam. Soluta asperiores voluptates aliquam explicabo, sapiente veritatis iusto enim aut quo sunt facere, illo expedita quisquam omnis?</p>
+            </article>
+
+            <article class="flex-item">
+                <img src="/tipo-de-arte-que-no-representa-la-realidad-2.jpg" alt="">
+            </article>
+        </section>
+
+        <section class="flex-container">
+            <article class="flex-item">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ex molestiae culpa nam. Soluta asperiores voluptates aliquam explicabo, sapiente veritatis iusto enim aut quo sunt facere, illo expedita quisquam omnis?</p>
+            </article>
+
+            <article class="flex-item">
+                <img src="/tipo-de-arte-que-no-representa-la-realidad-2.jpg" alt="">
+            </article>
+        </section>
     </main>
-    <footer>
-        <h2>footer</h2>
-    </footer>
     
 </body>
 </html>
